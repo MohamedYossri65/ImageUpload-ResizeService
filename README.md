@@ -34,6 +34,11 @@ This project demonstrates a photo upload system where photos are resized using [
    ```bash
    git clone https://github.com/your-username/photo-upload-resize.git
    cd photo-upload-resize
+   
+## Clint Setup
+```plaintext
+open file clint run html on any Browser
+```
 ## Environment Variables
 
 The application uses environment variables to manage configuration. Below is an example `.env` file for setting up the project:
