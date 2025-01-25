@@ -56,5 +56,5 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 
-.eslintrc.js
-.prettierrc
+/.eslintrc.js
+/.prettierrc
