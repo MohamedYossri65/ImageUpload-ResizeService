@@ -1,6 +1,6 @@
 
-
-# Photo Upload and Resize with Progress Bar
+ 
+# Photo Upload and Resize with Progress Bar with Nest Js
 
 This project demonstrates a photo upload system where photos are resized using [Sharp](https://sharp.pixelplumbing.com/), with a client-side progress bar implemented using [Axios](https://axios-http.com/). The application is containerized using Docker and Docker Compose for easy deployment.
 
