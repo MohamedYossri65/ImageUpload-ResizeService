@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: upload-image-app
+    build: .
+    volumes:
+      - ./src:/uploadImage/src:ro
+    ports:
+      - "4000:4000"
+    environment:
+      - DATABASE_HOST=mysql
+      - DATABASE_USER_NAME=root
+      - DATABASE_PASSWORD=root
+      - DATABASE_NAME=upload_image_db
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: upload-image-db
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: upload_image_db
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
